@@ -14,10 +14,6 @@ struct ContentView: View {
             ForEach(emojis.indices, id: \.self) {
                 index in CardView(content: emojis[index])
             }
-            
-            ForEach(emojis, id: \.self) {
-                emoji in CardView(content: emoji)
-            }
         }
         .foregroundColor(.orange)
         .imageScale(.small)
